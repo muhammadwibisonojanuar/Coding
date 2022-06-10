@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import dagger.android.support.DaggerAppCompatActivity
 import id.kotlin.belajar.R
 import javax.inject.Inject
+import id.kotlin.belajar.data.Result
 
 
 class HomeActivity : DaggerAppCompatActivity(), HomeView {

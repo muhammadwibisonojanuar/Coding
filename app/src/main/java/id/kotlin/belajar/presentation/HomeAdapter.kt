@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import id.kotlin.belajar.R
+import id.kotlin.belajar.data.Result
 
 
 class HomeAdapter (private val results: List<Result>): RecyclerView.Adapter<HomeAdapter.HomeViewHolder>(){
