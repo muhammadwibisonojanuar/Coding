@@ -4,8 +4,9 @@ import com.google.gson.annotations.SerializedName
 
 data class HomeResponse(
     @SerializedName("results")
-    val results: List<Result>
+    val results: List<Result>,
 )
+
 
 data class Result(
     @SerializedName("original_title")

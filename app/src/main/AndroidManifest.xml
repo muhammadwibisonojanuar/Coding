@@ -15,7 +15,8 @@
         android:name="com.google.android.gms.ads.APPLICATION_ID"
         android:value="ca-app-pub-9225963344328961~1005783699"/>
 
-    <activity android:name=".presentation.HomeActivity"
+    <activity
+        android:name=".presentation.HomeActivity"
         android:exported="true">
 
         <!--Inside this activity you should be having below code for

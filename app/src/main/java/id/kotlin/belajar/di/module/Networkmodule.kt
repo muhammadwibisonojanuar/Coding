@@ -2,6 +2,7 @@ package id.kotlin.belajar.di.module
 
 import dagger.Module
 import dagger.Provides
+import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
 import id.kotlin.belajar.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -10,7 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 @Module
-object Networkmodule {
+class Networkmodule {
 
     @Provides
     @Singleton
@@ -39,6 +40,7 @@ object Networkmodule {
             client(client)
             baseUrl(BuildConfig.BASE_URL)
             addConverterFactory(GsonConverterFactory.create())
+            addCallAdapterFactory(RxJava3CallAdapterFactory.createAsync())
         }.build()
     }
 
